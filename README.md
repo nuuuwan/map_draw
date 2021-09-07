@@ -8,3 +8,4 @@
   * Updated workflows
   * Cleaned README
   * Lint options
+  * Initial files
