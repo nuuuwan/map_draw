@@ -11,3 +11,4 @@
   * Initial files
   * basic code done
   * Basic version complete
+  * npm install leaflet
