@@ -13,3 +13,8 @@
 	height: 100px;
 	opacity: 0.1;
 }
+
+.leaflet-tile-pane {
+	filter: grayscale(100%);
+	filter: grayscale(100%);
+}

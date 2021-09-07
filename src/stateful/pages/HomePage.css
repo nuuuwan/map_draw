@@ -1,0 +1,17 @@
+.div-info {
+	position: absolute;
+	top: 24px;
+	left: 24px;
+	z-index: 100000;
+	max-width: 12%;
+	margin: 24px;
+	padding: 24px;
+	border-radius: 24px;
+	background: white;
+	opacity: 0.9;
+}
+
+.div-points {
+	max-width: 10%;
+	font-size: 12px;
+}

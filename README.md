@@ -10,3 +10,4 @@
   * Lint options
   * Initial files
   * basic code done
+  * Basic version complete
