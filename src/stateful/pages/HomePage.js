@@ -8,6 +8,8 @@ import "./HomePage.css";
 const DEFAULT_ZOOM = 15;
 const DEFAULT_LATLNG = [6.9157, 79.8636];
 const DEFAULT_CIRLE_RADIUS = 3;
+const LOCATION_PRECISION = 6;
+const DISTANCE_PRECISION = 3;
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -33,7 +35,7 @@ export default class HomePage extends Component {
       fillOpacity: 0.9,
     };
 
-    const distanceStr = distance.toFixed(2);
+    const distanceStr = distance.toFixed(DISTANCE_PRECISION);
 
     return (
       <div className="div-home-page">
@@ -42,7 +44,7 @@ export default class HomePage extends Component {
           {` ${distanceStr} km`}
           <div className="div-points">
             {JSON.stringify(
-              points.map((point) => point.map((x) => parseFloat(x.toFixed(4))))
+              points.map((point) => point.map((x) => parseFloat(x.toFixed(LOCATION_PRECISION))))
             )}
           </div>
         </div>
