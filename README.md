@@ -12,3 +12,4 @@
   * basic code done
   * Basic version complete
   * npm install leaflet
+  * Removed and disabled tests
