@@ -15,3 +15,4 @@
   * Removed and disabled tests
   * Ran lint; Removed README
   * Updated leaflet scripts
+  * Fixed console errors

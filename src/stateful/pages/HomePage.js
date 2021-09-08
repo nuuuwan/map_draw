@@ -53,15 +53,14 @@ export default class HomePage extends Component {
         >
           <Polyline positions={[points]} pathOptions={pathOptionsLine} />
           {points.map(function (point, i) {
+            const key = `circle-${i}`;
             return (
-              <>
-                <CircleMarker
-                  key={`circle-${i}`}
-                  center={point}
-                  radius={DEFAULT_CIRLE_RADIUS * 2}
-                  pathOptions={pathOptions}
-                />
-              </>
+              <CircleMarker
+                key={key}
+                center={point}
+                radius={DEFAULT_CIRLE_RADIUS * 2}
+                pathOptions={pathOptions}
+              />
             );
           })}
         </GeoMap>
