@@ -12,6 +12,32 @@
 }
 
 .div-points {
-	max-width: 10%;
 	font-size: 12px;
+}
+
+.div-points-info {
+	margin-top: 12px;
+}
+
+.div-points-data {
+	margin-top: 12px;
+	padding: 12px;
+	border-radius: 12px;
+	background: lightgray;
+}
+
+.button-copy-to-cb {
+	margin-top: 12px;
+	padding: 12px;
+	border: none;
+	border-radius: 12px;
+	font-size: 9px;
+}
+
+.div-info-distance {
+	margin-bottom: 12px;
+}
+
+.button-copy-to-cb:hover {
+	color: red;
 }

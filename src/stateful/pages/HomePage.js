@@ -1,5 +1,7 @@
 import { Component } from "react";
 import { CircleMarker, Polyline } from "react-leaflet";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import GeoMap from "../molecules/GeoMap.js";
 import LatLng from "../../base/LatLng.js";
 
@@ -35,17 +37,34 @@ export default class HomePage extends Component {
       fillOpacity: 0.9,
     };
 
+    const pointsInfo = `${points.length} point(s) selected.`;
     const distanceStr = distance.toFixed(DISTANCE_PRECISION);
+    const pointsStr = JSON.stringify(
+      points.map((point) =>
+        point.map((x) => parseFloat(x.toFixed(LOCATION_PRECISION)))
+      )
+    );
+
+    const renderCopyToCB =
+      points.length > 0 ? (
+        <CopyToClipboard text={pointsStr}>
+          <button className="button-copy-to-cb">Copy to Clipboard</button>
+        </CopyToClipboard>
+      ) : null;
 
     return (
       <div className="div-home-page">
         <div className="div-info">
-          <label>Distace:</label>
-          {` ${distanceStr} km`}
+          <div className="div-info-distance">
+            <label>Distace:</label>
+            {` ${distanceStr} km`}
+          </div>
           <div className="div-points">
-            {JSON.stringify(
-              points.map((point) => point.map((x) => parseFloat(x.toFixed(LOCATION_PRECISION))))
-            )}
+            <div className="div-points-info">{pointsInfo}</div>
+            <div className="div-points-data">
+              {pointsStr}
+              {renderCopyToCB}
+            </div>
           </div>
         </div>
         <GeoMap

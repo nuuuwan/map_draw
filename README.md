@@ -18,3 +18,4 @@
   * Fixed console errors
   * DEFAULT_CIRLE_RADIUS = 3
   * Update LOCATION_PRECISION and LOCATION_PRECISION
+  * Copy to Clipboard + Lint
