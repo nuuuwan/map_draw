@@ -16,3 +16,4 @@
   * Ran lint; Removed README
   * Updated leaflet scripts
   * Fixed console errors
+  * DEFAULT_CIRLE_RADIUS = 3

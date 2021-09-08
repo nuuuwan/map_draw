@@ -7,7 +7,7 @@ import "./HomePage.css";
 
 const DEFAULT_ZOOM = 15;
 const DEFAULT_LATLNG = [6.9157, 79.8636];
-const DEFAULT_CIRLE_RADIUS = 5;
+const DEFAULT_CIRLE_RADIUS = 3;
 
 export default class HomePage extends Component {
   constructor(props) {
