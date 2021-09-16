@@ -3,7 +3,7 @@
 	top: 24px;
 	left: 24px;
 	z-index: 100000;
-	max-width: 12%;
+	width: 240px;
 	margin: 24px;
 	padding: 24px;
 	border-radius: 24px;
@@ -21,9 +21,8 @@
 
 .div-points-data {
 	margin-top: 12px;
-	padding: 12px;
 	border-radius: 12px;
-	background: lightgray;
+	background: none;
 }
 
 .button-copy-to-cb {
@@ -40,4 +39,18 @@
 
 .button-copy-to-cb:hover {
 	color: red;
+}
+
+.textarea-points {
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 400px;
+	border: none;
+	background: none;
+	color: darkgreen;
+	outline: none;
+	font-size: 12px;
+	font-family: monospace;
+	resize: none;
 }

@@ -19,3 +19,4 @@
   * DEFAULT_CIRLE_RADIUS = 3
   * Update LOCATION_PRECISION and LOCATION_PRECISION
   * Copy to Clipboard + Lint
+  *  (2021-09-16-1158) Added textarea

@@ -62,7 +62,7 @@ export default class HomePage extends Component {
           <div className="div-points">
             <div className="div-points-info">{pointsInfo}</div>
             <div className="div-points-data">
-              {pointsStr}
+              <textarea className="textarea-points" value={pointsStr} />
               {renderCopyToCB}
             </div>
           </div>
