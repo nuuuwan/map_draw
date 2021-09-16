@@ -50,8 +50,10 @@ export default class HomePage extends Component {
       ) : null;
 
     const onChange = function (e) {
-      const points = JSON.parse(e.target.value);
-      this.setState({ points });
+      try {
+        const points = JSON.parse(e.target.value);
+        this.setState({ points });
+      } catch {}
     }.bind(this);
 
     return (
