@@ -1,4 +1,5 @@
 const RADIUS_EARTH_KM = 6371;
+const LOCATION_PRECISION = 6;
 
 export default class LatLng {
   static degToRad(degValue) {
@@ -34,5 +35,9 @@ export default class LatLng {
       [0, [undefined, undefined]]
     );
     return distance;
+  }
+
+  static round([lat, lng]) {
+    return [lat, lng].map( x => parseFloat(parseFloat(x).toFixed(LOCATION_PRECISION)));
   }
 }

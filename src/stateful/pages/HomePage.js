@@ -10,7 +10,6 @@ import "./HomePage.css";
 const DEFAULT_ZOOM = 15;
 const DEFAULT_LATLNG = [6.9157, 79.8636];
 const DEFAULT_CIRLE_RADIUS = 3;
-const LOCATION_PRECISION = 6;
 const DISTANCE_PRECISION = 3;
 
 export default class HomePage extends Component {
@@ -18,13 +17,15 @@ export default class HomePage extends Component {
     super(props);
     this.state = { points: [], distance: 0 };
   }
+
   onClick(e) {
     const { lat, lng } = e.latlng;
     let { points } = this.state;
-    points.push([lat, lng]);
+    points.push(LatLng.round([lat, lng]));
     const distance = LatLng.getMultiPointDistance(points);
     this.setState({ points, distance });
   }
+
   render() {
     const { points, distance } = this.state;
     const pathOptionsLine = {
