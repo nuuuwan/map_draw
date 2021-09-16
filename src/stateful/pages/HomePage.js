@@ -49,6 +49,11 @@ export default class HomePage extends Component {
         </CopyToClipboard>
       ) : null;
 
+    const onChange = function (e) {
+      const points = JSON.parse(e.target.value);
+      this.setState({ points });
+    }.bind(this);
+
     return (
       <div className="div-home-page">
         <div className="div-info">
@@ -59,7 +64,11 @@ export default class HomePage extends Component {
           <div className="div-points">
             <div className="div-points-info">{pointsInfo}</div>
             <div className="div-points-data">
-              <textarea className="textarea-points" value={pointsStr} />
+              <textarea
+                className="textarea-points"
+                onChange={onChange}
+                value={pointsStr}
+              />
               {renderCopyToCB}
             </div>
           </div>

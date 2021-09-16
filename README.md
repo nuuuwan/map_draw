@@ -24,3 +24,4 @@
   *  (2021-09-16-1252) Round lat lng
   *  (2021-09-16-1253) Removed overflow:hide from text area
   *  (2021-09-16-1254) Lint
+  *  (2021-09-16-1257) Made textarea editable
