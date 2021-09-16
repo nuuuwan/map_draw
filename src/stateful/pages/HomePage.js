@@ -39,11 +39,7 @@ export default class HomePage extends Component {
 
     const pointsInfo = `${points.length} point(s) selected.`;
     const distanceStr = distance.toFixed(DISTANCE_PRECISION);
-    const pointsStr = JSON.stringify(
-      points.map((point) =>
-        point.map((x) => parseFloat(x.toFixed(LOCATION_PRECISION)))
-      )
-    );
+    const pointsStr = JSON.stringify(points, null, 4);
 
     const renderCopyToCB =
       points.length > 0 ? (

@@ -20,3 +20,4 @@
   * Update LOCATION_PRECISION and LOCATION_PRECISION
   * Copy to Clipboard + Lint
   *  (2021-09-16-1158) Added textarea
+  *  (2021-09-16-1250) Added indents to JSON
