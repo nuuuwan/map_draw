@@ -42,7 +42,6 @@
 }
 
 .textarea-points {
-	overflow: hidden;
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 400px;
