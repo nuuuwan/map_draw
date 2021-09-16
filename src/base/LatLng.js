@@ -38,6 +38,8 @@ export default class LatLng {
   }
 
   static round([lat, lng]) {
-    return [lat, lng].map( x => parseFloat(parseFloat(x).toFixed(LOCATION_PRECISION)));
+    return [lat, lng].map((x) =>
+      parseFloat(parseFloat(x).toFixed(LOCATION_PRECISION))
+    );
   }
 }
