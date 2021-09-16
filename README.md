@@ -26,3 +26,4 @@
   *  (2021-09-16-1254) Lint
   *  (2021-09-16-1257) Made textarea editable
   *  (2021-09-16-1312) React Lint [AUTO]
+  *  (2021-09-16-1313) Changed textarea font size
